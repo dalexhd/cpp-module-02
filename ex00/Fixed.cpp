@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 15:56:04 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/13 16:27:08 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/13 18:46:06 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ Fixed & Fixed::operator=(const Fixed & num)
 
 	std::cout << "Assignation operator called" << std::endl;
 	if(this == &num)
-       return (*this);
-    tmp = num.getRawBits();
-    return (*this);
+		return (*this);
+	tmp = num.getRawBits();
+	return (*this);
 }
 
 int		Fixed::getRawBits(void) const
