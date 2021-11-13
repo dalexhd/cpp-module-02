@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 15:56:04 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/13 21:16:46 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/13 23:33:42 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ Fixed::Fixed(const float num)
 {
 	std::cout << "Float constructor called" << std::endl;
 	this->setRawBits((int)roundf(num * (1 << this->fractional_number)));
-
 }
 
 Fixed::~Fixed()
